@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+html {
+  height: 100%;
+}
+body {
+  font-family: comic;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Comic Neue', cursive;
+  background-image: url(./assets/fondoComic.webp);
+  color: black;
+}
+
+.titulo {
+  font-family: 'Comic Neue', cursive;
+  color: #f4c803;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 255, 255);
+  box-sizing: border-box;
+  border: #000000 solid 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: black;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #f68e44;
+  font-size: 12px;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  background-color: #f8b808;
+  border: 5px solid black;
+  width: 150px;
+  font-family: 'Comic Neue', cursive;
+}
+
+.btn:nth-child(2) {
+  background-color: #780808;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.navBar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  overflow-x: hidden;
+  background-color: #780808;
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+}
+
+.navBar div {
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+
+.navBar div a {
+  text-decoration: none;
+  color: white;
+}
+
+.navBar div a:hover {
+  color: #f8b808;
+}
+
+.navBarItemList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navBarItemList li {
+  margin-left: 30px;
+}
+
+.contenedor {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cargaGifContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 94vh;
+  background-image: url(./assets/fondoComic.webp);
+}
+
+.cargaGifContainer h1 {
+  color: #f4c803;
+  font-size: 64px;
+  font-weight: bolder;
+  -webkit-text-stroke: 2px black;
+  text-transform: uppercase;
+}
+.cargaGif {
+  width: 250px;
+}
+
+.containerUser {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.imgUser {
+  background-color: black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40vh;
+  border-radius: 0 0 50px 50px;
+  margin-bottom: 100px;
+}
+
+.imgUser img {
+  position: absolute;
+  top: 150px;
+  width: 350px;
+}
+
+.datosUser {
+  background-color: red;
+}
+
+.imgFondo img {
+  height: 93vh;
+  width: 100%;
+  object-fit: cover;
+}
+.containerProductos {
+  width: 100%;
+}
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100vw;
+  height: 92vh;
+  object-fit: cover;
+  object-position: top;
+}
+.tiendaHero {
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+  display: flex;
+  flex-direction: column;
+}
+#logoHero {
+  width: 450px;
+  height: 450px;
+}
+#btnProductos {
+  font-size: 2rem;
+  width: auto;
+  text-align: center;
+}
+.containerItemsProductos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.datosItems {
+  width: 250px;
+  height: 600px;
+  background-color: #000000;
+  border: #f4c803 solid 2px;
+  margin: 10px;
+  font-family: 'Roboto', sans-serif !important;
+  position: relative;
+}
+
+.datosItems img {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 0;
+}
+
+.datosItemsTexto {
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+.datosItemsTexto h2 {
+  font-size: 1.2rem;
+}
+
+.datosItemsTexto p {
+  font-size: 1rem;
+}
+
+.comprarItem {
+  padding: 0 20px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.comprarItem p {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.comprarItem p::before {
+  content: '$ ';
+}
+
+.btncart {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.5rem;
+  color: #f4c803;
+  cursor: pointer;
+}
+
+.contenedorCarrito {
+  display: flex;
+  color: #ffffff;
+}
+
+.plusAndMinus {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+
+  position: absolute;
+  bottom: 20px;
+  margin-left: 20px;
+}
+
+.buyAndEmpty {
+  display: flex;
+  justify-content: center;
+}
+.buyAndEmpty form button {
+  width: 300px;
+  cursor: pointer;
+}
+
+.buyAndEmpty form:nth-child(2) button {
+  background-color: #780808;
+}
+
+.TYMessage {
+  width: 100%;
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TYMessage h1 {
+  font-size: 2rem;
+  color: white;
+  padding: 20px;
+  background-color: #f4c803;
+  border: #000000 solid 8px;
+  text-transform: uppercase;
+  transform: skew(-14deg) translate(-11px, 0px);
+}
+
+.form {
+  background-color: white;
+  margin: 10px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  border: 8px solid black;
+  width: 40%;
+  /* SECUENCIA: para centrar formulario */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.formInput input {
+  margin-bottom: 10px;
+  width: 95%;
+  padding: 2%;
+  margin-left: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid black;
+  font-style: italic;
+}
+
+.tablaItems {
+  margin: 0 auto;
+  margin-top: 40%;
+  padding: 50px;
+  border: solid 8px black;
+  color: white;
+  background-color: white;
+  text-align: center;
+  width: 50%;
+}
+
+#tablaTitulos {
+  background-color: #780808;
+}
+
+#tablaTitulos th {
+  padding: 10px;
+}
+
+#productsContainer tr {
+  background-color: #f4c803;
+}
+
+.formEmail {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #780808;
+  padding: 50px;
+  width: 100%;
+  margin: 0 auto;
+  border: #000000 solid 8px;
+}
+
+.formEmail input {
+  width: 500px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.formEmail textarea {
+  width: 500px;
+  padding: 20px;
+  height: 200px;
+}

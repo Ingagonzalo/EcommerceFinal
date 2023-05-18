@@ -1,0 +1,53 @@
+<div class='containerProductos'>
+  <h2 style='text-decoration: underline; text-align: center;'>Mi carrito</h2>
+  <ul class='containerItemsProductos'>
+    {{#if cart.products.length}}
+      {{#each cart.products}}
+        <div class='datosItems'>
+
+          <img src='{{this.thumbnail}}' alt='imagenProducto' width='100' />
+          <div class='datosItemsTexto'>
+            <h2>{{this.title}}</h2>
+            <p>${{this.price}}</p>
+            <p>Cantidad: {{this.quantity}}</p>
+          </div>
+
+          <div class='plusAndMinus'>
+            <form action='/decrementQty/{{this._id}}' method='POST'>
+              <input type='hidden' name='title' value='{{this._id}}' />
+              <button type='submit' class='btncart btn-danger'><i
+                  class='fa-solid fa-minus'
+                ></i></button>
+            </form>
+
+            <form action='/carrito/{{this._id}}' method='POST'>
+              <input type='hidden' name='title' value='{{this._id}}' />
+              <button type='submit' class='btncart btn-success'><i
+                  class='fa-solid fa-plus'
+                ></i></button>
+            </form>
+          </div>
+
+        </div>
+
+      {{/each}}
+    {{/if}}
+  </ul>
+  {{#with cart}}
+    <div class='buyAndEmpty'>
+      <form action='/emptycart' method='POST'>
+        <button type='submit' class='btn btn-danger mx-2' name='empty'>Vaciar
+          Carrito</button>
+      </form>
+
+      <form action='/carrito/finish/{{this._id}}' method='POST'>
+        <button
+          type='submit'
+          class='btn btn-success mx-2'
+          name='buy'
+        >Comprar</button>
+      </form>
+    </div>
+    <hr />
+  {{/with}}
+</div>

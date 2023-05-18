@@ -1,0 +1,48 @@
+
+<div  class="imgFondo">
+  <img src='https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2015/02/dc-comics-universe.jpg?resize=1200%2C750&quality=50&strip=all&ssl=1' alt="">
+</div>
+
+<div class="containerLogin">
+    
+
+
+    <div class="login-box">
+       <form id='login' action='/' method='POST'>
+       <h1 class="titulo">Ingresa a tu perfil</h1>
+    <div class='user-box'>
+      <input name="username" id="username"  type="text"  required />
+      <label>Username</label>
+    </div>
+    <div class='user-box'>
+      <input name="password" id="contrasenia"   type="password" required/>
+      <label>Password</label>
+    </div>
+
+    <div class="botones">
+      <button class='btn' type='submit'>
+  
+        Log in</button>
+        <button class="btn" onclick="goSignup()">
+            SIGNUP
+          </button>
+    </div>
+  </form>
+    </div>
+ 
+
+
+
+</div>
+
+    </div>
+
+    <script>
+      function redireccionar(pagina) {
+        location.href = pagina;
+      }
+
+      function goSignup() {
+        redireccionar("/register");
+      }
+    </script>

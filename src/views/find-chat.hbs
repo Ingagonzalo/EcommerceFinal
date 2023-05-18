@@ -1,0 +1,11 @@
+<div class='container'>
+  {{#if userChat}}
+    {{#each userChat}}
+      <div>
+        <strong style='color: white'>{{this.username}}</strong>
+        <span style='color: white'>[{{this.time}}]:</span>
+        <em style='color: white; font-style: italic'>{{this.message}}</em>
+      </div>
+    {{/each}}
+  {{/if}}
+</div>

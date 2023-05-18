@@ -1,0 +1,50 @@
+<nav class="navBar">
+
+    <div class="navBarItem">
+        <a disabled href="/">
+                <i class="fa-solid fa-home"></i>
+                Home
+            </a>
+    </div>
+    <div class="navBarItem">
+        <a disabled href="/">
+            <i class="fa-solid fa-user"></i>
+            Log in
+        </a>
+    </div>
+
+    <div class="navBarItem">
+        {{#if status}}
+        <a href="/logout">
+            {{else}}
+            <a disabled href="/logout">
+                {{/if}}
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Log out
+            </a>
+
+    </div>
+    <div class="navBarItem">
+        <a href="/register">
+            <i class="fa-solid fa-user-plus"></i>
+            Sign Up
+        </a>
+    </div>
+    <div class="navBarItem">
+        <a href="/user">
+            <i class="fa-solid fa-user"></i>
+          Mi Perfil
+        </a>
+
+    </div>
+    <div class="navBarItem">
+        <a href="/cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+       
+        </a>
+
+    </div>
+
+
+</nav>

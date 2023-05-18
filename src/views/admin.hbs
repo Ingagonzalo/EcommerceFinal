@@ -1,0 +1,33 @@
+
+
+<div >
+    <h1 >Carga tus productos</h1>
+    <form class='form'  >
+        <div class="formInput">
+            <input id="productInput" type="text" name="name" placeholder="Nombre" />
+            <input id="priceInput"  type="number" name="price" placeholder="Precio" />
+            <input id="imgInput" type="text" name="thumbnail" placeholder="Thumbnail" />
+            <input id="categoryInput"  type="text" name="category" placeholder="Categoria del producto">
+            <input class="btn btn-primary" type="submit" value="Cargar Producto" />
+        </div>
+    </form>
+</div>
+
+<div>
+
+    <table   class='tablaItems' >
+    <thead>
+        <tr id="tablaTitulos">
+            <th>Nombre:</th>
+            <th>Precio:</th>
+            <th>Imagen:</th>
+        </tr>
+    </thead>
+    <tbody id="productsContainer">
+
+    </tbody>
+    </table>
+</div>
+
+{{> chat}}
+

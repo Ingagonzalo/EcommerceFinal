@@ -1,0 +1,40 @@
+<div class='hero'>
+  <img src='./assets/fondoHero.webp' alt='' />
+  <div class='tiendaHero'>
+    <img id='logoHero' src='./assets/logo.png' alt='' />
+    <a href='#productos' id='btnProductos' class='btn'>Nuestros Productos</a>
+
+  </div>
+</div>
+
+<h3 class='text-center' id='productos'>Lista de productos</h3>
+
+{{! Agregado lista de productos }}
+<div class='containerItemsProductos'>
+
+  {{#if products.length}}
+    {{#each products}}
+      <div class='datosItems'>
+
+        <img src={{this.thumbnail}} alt='' width='100' />
+        <div class='datosItemsTexto'>
+          <h2>{{this.title}}</h2>
+
+          <p>{{this.description}}</p>
+        </div>
+        <div class='comprarItem'>
+          <p>{{this.price}}</p>
+          <form action='/carrito/{{this._id}}' method='POST'>
+            <button
+              type='submit'
+              class='btncart btn-success'
+              name='add-to-cart'
+            ><i class='fa-solid fa-cart-plus'></i></button>
+          </form>
+        </div>
+
+      </div>
+
+    {{/each}}
+  {{/if}}
+</div>

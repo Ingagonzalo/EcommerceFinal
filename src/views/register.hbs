@@ -1,0 +1,87 @@
+<div>
+  <div>
+
+    <br />
+    <form
+      class='form'
+      id='signup-form'
+      role='form'
+      action='/register'
+      method='post'
+      autocomplete='off'
+      enctype='multipart/form-data'
+    >
+      <h1>Registro</h1>
+      <div class='formInput'>
+        <input
+          name='username'
+          placeholder='* Nombre de Usuario'
+          type='text'
+          required
+        />
+        <input
+          name='password'
+          id='password'
+          placeholder='* Contraseña'
+          type='password'
+          required
+        />
+        <input
+          name='checkPassword'
+          id='checkPassword'
+          placeholder='* Repetir contraseña'
+          type='password'
+          required
+        />
+        <input name='firstname' placeholder='* Nombre' type='text' required />
+        <input name='lastname' placeholder='* Apellido' type='text' required />
+
+        <input
+          name='email'
+          placeholder='* Email'
+          class='form-control my-3'
+          type='text'
+          required
+        />
+        <input
+          name='phone'
+          placeholder='Telefono'
+          class='form-control my-3'
+          type='tel'
+        />
+        <input
+          name='address'
+          placeholder='Address'
+          class='form-control my-3'
+          type='addres'
+        />
+        <input
+          name='age'
+          placeholder='Age'
+          class='form-control my-3'
+          type='number'
+        />
+        <input name='photo' type='file' />
+      </div>
+      <div>
+        <input class='btn' type='submit' value='Singup' />
+        <button class='btn' onclick='goSignup()'>
+          LOGIN
+        </button>
+      </div>
+
+    </form>
+  </div>
+
+</div>
+
+<script>
+  // Check if password is the same const form =
+  document.getElementById('signup-form'); const password =
+  document.getElementById("password") const checkPassword =
+  document.getElementById("checkPassword") form.addEventListener('submit',
+  (event) => { if (password.value !== checkPassword.value) {
+  event.preventDefault(); alert('Las contraseñas no coinciden. Por favor,
+  verifique los campos de contraseña.'); } }); function redireccionar(pagina) {
+  location.href = pagina; } function goSignup() { redireccionar("/"); }
+</script>
