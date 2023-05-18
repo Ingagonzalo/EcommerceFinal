@@ -6150,3 +6150,6 @@
 {"level":40,"time":1684372562171,"pid":22532,"hostname":"DESKTOP-81CVNO7","method":"GET","url":"/chat/assets/logo.png"}
 {"level":40,"time":1684372602811,"pid":22532,"hostname":"DESKTOP-81CVNO7","msg":"Ruta no valida"}
 {"level":40,"time":1684372602811,"pid":22532,"hostname":"DESKTOP-81CVNO7","method":"GET","url":"/chat/assets/logo.png"}
+{"level":40,"time":1684374948089,"pid":116,"hostname":"DESKTOP-81CVNO7","msg":"Ruta no valida"}
+{"level":40,"time":1684374948090,"pid":116,"hostname":"DESKTOP-81CVNO7","method":"GET","url":"/carrito/finish/assets/logo.png"}
+{"level":50,"time":1684374985357,"pid":116,"hostname":"DESKTOP-81CVNO7","err":{"type":"TypeError","message":"Cannot read properties of undefined (reading 'filename')","stack":"TypeError: Cannot read properties of undefined (reading 'filename')\n    at Strategy._verify (file:///C:/Users/Gonzalo/Desktop/Entrega%20Final-%20Ecommerce/src/lib/passport.lib.js:57:25)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"},"msg":"Cannot read properties of undefined (reading 'filename')"}

@@ -117,7 +117,6 @@ const cartOnly = async (req, res) => {
 }
 
 
-// FUNCION PARA ELIMINAR PRODUCTOS MEDIANTE ID DEL CART
 const deleteProductInCart = async (req, res, next) => {
   try {
     const { user } = req.session.passport;
@@ -136,7 +135,6 @@ const deleteProductInCart = async (req, res, next) => {
   }
 };
 
-//funcion para restar cantidad
 const decrementQty = async (req, res, next) => {
   try {
     const { productId } = req.params;
@@ -153,7 +151,6 @@ const decrementQty = async (req, res, next) => {
     if (cart.products.some((item) => item.title === product.title)) {
       cart.products.find((item) => item.title === product.title).quantity--;
 
-      // si quantity es 0  eliminar el producto del carrito
       if (
         cart.products.find((item) => item.title === product.title).quantity ===
         0
