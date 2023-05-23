@@ -79,7 +79,6 @@ const deleteProduct = async (req, res) => {
   }
 };
 
-//buscar producto por categoria
 const findProductsByCategory = async (req, res, next) => {
   try {
     const { user } = req.session.passport;
@@ -100,7 +99,6 @@ const findProductsByCategory = async (req, res, next) => {
   }
 };
 
-//mostrar info de producto
 const productInfo = async (req, res, next) => {
   try {
     const { id } = req.params;

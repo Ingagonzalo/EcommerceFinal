@@ -1,19 +1,22 @@
 <div class='containerUser'>
   <div class='imgUser'>
-    <img src='https://cdn-icons-png.flaticon.com/512/6596/6596121.png' alt='' />
+    <img style='width: 100px' src='{{imagen}}' alt='Imagen subida' />
   </div>
   <div class='datosUser'>
-    <h2><i>Bienvenido {{usuario}}</i></h2>
-    <br />
-    <h3>Nombre: {{nombre}}</h3>
-    <h3>Apellido: {{apellido}}</h3>
-    <h3>Email: {{email}}</h3>
-    <h3>Tel: {{tel}}</h3>
-    <h3>Direccion: {{direccion}}</h3>
-    <h3>Edad: {{edad}}</h3>
 
-    <form action='/logout' method='get'>
-      <input class='btn btn-danger my-5' type='submit' value='LOGOUT' />
-    </form>
+    <br />
+    <div>
+      <h3>Nombre:</h3>
+      <p> {{nombre}}</p>
+    </div>
+    <div><h3>Apellido:</h3> <p>{{apellido}}</p></div>
+    <div> <h3>Email: </h3><p>{{email}}</p></div>
+    <div><h3>Tel:</h3> <p>{{tel}}</p></div>
+    <div><h3>Direccion: </h3><p>{{direccion}}</p></div>
+    <div> <h3>Edad: </h3><p>{{edad}}</p></div>
+
   </div>
+  <form action='/logout' method='get'>
+    <input class='btn btn-danger my-5' type='submit' value='LOGOUT' />
+  </form>
 </div>
